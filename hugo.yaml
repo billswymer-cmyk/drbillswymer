@@ -51,7 +51,7 @@ menu:
       weight: 15
     - name: Bio & C.V.
       url: /bio/
-      weight: 5
+      weight: 45
     - name: Education
       url: /education/
       weight: 10
