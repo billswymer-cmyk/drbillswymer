@@ -4,6 +4,17 @@ This site is built with [Hugo](https://gohugo.io) (extended) and the Hugo Blox
 theme. Content lives as plain Markdown files — no build scripts to learn for
 day-to-day edits.
 
+## Easiest path: the update form
+
+Fill out `SITE_UPDATE_FORM.txt` (repo root) — new publication, bio edit,
+teaching change, contact update, co-author, photo, whatever — and hand it to
+your AI assistant. It has its own instructions at the bottom telling the
+assistant exactly which files to touch and how. Reuse the same file for every
+future update; just clear your old answers first.
+
+The rest of this document is the manual, by-hand version of the same edits,
+for anyone who'd rather skip the form.
+
 ## Adding a publication
 
 Create a new folder under `content/publication/`, e.g.

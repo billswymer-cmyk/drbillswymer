@@ -1,0 +1,149 @@
+============================================================
+  UPDATE MY ACADEMIC WEBSITE — INFORMATION FORM
+============================================================
+Site: https://billswymer-cmyk.github.io/drbillswymer/
+Repo: https://github.com/billswymer-cmyk/drbillswymer
+
+HOW TO USE THIS FORM
+  - Fill in only the section(s) for the update(s) you want. Leave
+    everything else blank.
+  - Save the file, then hand it to your AI assistant (the instructions
+    at the bottom tell it exactly what to do).
+  - You can reuse this same file every time you have an update — just
+    clear out your old answers first, or make a copy.
+
+
+------------------------------------------------------------
+  1. ADD A NEW PUBLICATION
+------------------------------------------------------------
+Title:
+>
+
+Authors (in order, as they should appear — include yourself):
+>
+
+Type (journal article / book / book chapter / report / dataset /
+software / presentation / patent / court brief):
+>
+
+Date (year, or full date if known):
+>
+
+Venue (journal/publisher name, volume, issue, pages):
+>
+
+Abstract:
+>
+
+Link (DOI or URL to the publisher's version, PDF, etc.):
+>
+
+Research area(s) this belongs to (see your site's current areas —
+Real Estate Brokerage & Agent Behavior / Housing Market Dynamics /
+Real Estate Finance — or say "new area" and describe it):
+>
+
+
+------------------------------------------------------------
+  2. EDIT YOUR BIO / HOMEPAGE INTRO
+------------------------------------------------------------
+New homepage intro (2-4 sentences, third person) — leave blank to
+keep as-is:
+>
+
+New full bio (for the Bio & C.V. page) — leave blank to keep as-is:
+>
+
+
+------------------------------------------------------------
+  3. UPDATE TEACHING
+------------------------------------------------------------
+Courses to add or change (course number, title, level, term):
+>
+
+
+------------------------------------------------------------
+  4. UPDATE CONTACT INFO
+------------------------------------------------------------
+Email:
+>
+Office:
+>
+Phone:
+>
+
+
+------------------------------------------------------------
+  5. ADD/UPDATE A CO-AUTHOR
+------------------------------------------------------------
+Name (exactly as it should match your publication author lists):
+>
+Link to their page (personal site, university directory, or LinkedIn):
+>
+
+
+------------------------------------------------------------
+  6. NEW OR CHANGED PHOTO
+------------------------------------------------------------
+Attach the new photo file when you talk to your assistant.
+>
+
+
+------------------------------------------------------------
+  7. ANYTHING ELSE
+------------------------------------------------------------
+Free text — describe any other change:
+>
+
+
+============================================================
+  FOR YOUR AI ASSISTANT — you don't need to read this part
+============================================================
+This is a Hugo + Hugo Blox site. Apply the filled-in sections above as
+follows, then build locally and show the owner a preview before
+pushing:
+
+1. NEW PUBLICATION → create
+   content/publication/<slug>/index.md (slug = short kebab-case title)
+   with front matter:
+     title, date (YYYY-MM-DD), authors: [...],
+     publication_types: [one of journal_article, book, book_chapter,
+       report, patent, court_brief, data, software, presentation],
+     publication: "venue string", abstract: "...",
+     links: [{type: doi|site|pdf|preprint|code|dataset|poster|project|
+       slides|video|source, url: "...", label: "..."}],
+     tags: [...] — tags must match a tags[] entry in
+     data/research_areas.json for the publication to appear under that
+     Research Area on the homepage and Writings filter. If the owner
+     described a new research area, add it to data/research_areas.json
+     (fields: slug, name, description, tags) rather than inventing an
+     unlisted tag.
+
+2. BIO / HOMEPAGE INTRO → edit the Markdown body (not the front
+   matter) of content/_index.md (homepage intro) and/or
+   content/bio/_index.md (full bio). Keep them distinct texts — do not
+   duplicate one into the other.
+
+3. TEACHING → edit content/teaching/_index.md body.
+
+4. CONTACT → edit content/contact/_index.md body.
+
+5. CO-AUTHOR → add/update the "Name": "url" entry in
+   data/coauthors.json. The People page (content/people/, rendered by
+   layouts/people/list.html) is auto-populated from every
+   publication's authors: field — no separate edit needed there beyond
+   the coauthors.json link.
+
+6. PHOTO → replace assets/images/bill-swymer.jpg with the new file
+   (same filename, or update the path in layouts/landing/list.html if
+   the filename changes).
+
+7. ANYTHING ELSE → use judgment; this site's structure and conventions
+   are documented in WEBSITE_PRINCIPLES.md and UPDATING.md at the repo
+   root — read those first for anything not covered above.
+
+After making changes: run `hugo server` from the repo root and show
+the owner a local preview (http://localhost:1313/drbillswymer/)
+before committing/pushing. Do not push to GitHub or otherwise publish
+until the owner explicitly approves — pushing to `main` triggers an
+automatic deploy to the already-live site.
