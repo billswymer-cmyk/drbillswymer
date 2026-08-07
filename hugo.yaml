@@ -46,8 +46,8 @@ params:
 
 menu:
   main:
-    - name: Research Areas
-      url: /#research-areas
+    - name: Research
+      url: /#research
       weight: 15
     - name: Bio & C.V.
       url: /bio/
