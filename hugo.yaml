@@ -48,13 +48,13 @@ menu:
   main:
     - name: Research Areas
       url: /#research-areas
-      weight: 5
+      weight: 15
     - name: Bio & C.V.
       url: /bio/
-      weight: 10
+      weight: 5
     - name: Education
       url: /education/
-      weight: 15
+      weight: 10
     - name: Writings
       url: /publication/
       weight: 20
