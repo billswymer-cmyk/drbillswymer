@@ -46,9 +46,6 @@ params:
 
 menu:
   main:
-    - name: Research
-      url: /#research
-      weight: 15
     - name: C.V.
       url: /cv/
       weight: 45
