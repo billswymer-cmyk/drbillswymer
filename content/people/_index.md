@@ -1,4 +1,4 @@
 ---
-title: "Co-authors"
+title: "Co-Authors"
 url: /people/
 ---
