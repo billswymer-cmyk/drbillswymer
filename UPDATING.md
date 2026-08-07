@@ -42,7 +42,7 @@ show up under a Research Area on the homepage and Writings page.
 ## Editing your bio, homepage intro, or teaching page
 
 Edit the Markdown body in `content/cv/_index.md`, `content/_index.md`, or
-`content/teaching/_index.md` directly.
+`content/research/_index.md` directly.
 
 **Note on the current content:** the homepage intro, full bio, teaching page,
 and research areas were drafted from your Ph.D., your one indexed

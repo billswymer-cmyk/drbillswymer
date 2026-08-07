@@ -27,7 +27,7 @@ For future maintainers (human or AI) working on this repository.
   Rendered by `layouts/publication/single.html` (custom) and listed by
   `layouts/publication/list.html` (custom "Writings" page: tabs, sidebar
   filters, sort, BibTeX export — all client-side vanilla JS, no build step).
-- `content/cv/`, `content/teaching/`, `content/contact/`, `content/people/`
+- `content/cv/`, `content/research/`, `content/contact/`, `content/people/`
   — plain pages using the theme's default `single.html` except `people`,
   which has a custom `layouts/people/list.html`.
 
