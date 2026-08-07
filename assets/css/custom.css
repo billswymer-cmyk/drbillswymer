@@ -1,0 +1,109 @@
+:root {
+  --color-bg: #fdfbf8;
+  --color-surface: #f8f3ec;
+  --color-text: #2d2926;
+  --color-text-muted: #6b6560;
+  --color-accent: #7a5c3a;
+  --color-link: #5a7a6b;
+  --color-border: #e2ddd5;
+  --navbar-height: 4rem;
+}
+
+/* Forced light mode: this site does not offer a dark-mode toggle. */
+html, body {
+  background: var(--color-bg) !important;
+  color: var(--color-text) !important;
+}
+.dark, [data-wc-theme-default="dark"] {
+  background: var(--color-bg) !important;
+  color: var(--color-text) !important;
+}
+[data-search-toggle] ~ * .theme-toggle,
+.theme-toggle,
+#theme-toggle {
+  display: none !important;
+}
+
+body {
+  background: var(--color-bg);
+}
+
+/* Navbar */
+.navbar-brand {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--color-text) !important;
+}
+#site-header {
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+.navbar { padding-left: 1.5rem; padding-right: 1.5rem; padding-top: 1rem; padding-bottom: 1rem; }
+.nav-link { color: var(--color-text) !important; }
+.nav-link:hover, .nav-link.active { color: var(--color-accent) !important; }
+
+/* Tabs (Writings page) */
+.tab-btn {
+  color: var(--color-text-muted);
+  border-bottom: 2px solid transparent;
+}
+.tab-btn:hover { color: var(--color-text); }
+.tab-btn.tab-active {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+/* Dense citation rows */
+.pub-item { transition: background 0.18s ease; }
+.pub-item:hover { background: var(--color-surface); }
+
+/* Card / accordion hover */
+details {
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+}
+details:hover {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+@media (prefers-reduced-motion: reduce) {
+  details, .pub-item { transition: none !important; }
+}
+
+/* Buttons */
+#reset-filters, #bibtex-all, .tab-btn { cursor: pointer; }
+
+/* Accessibility */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--color-accent);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  z-index: 100;
+}
+.skip-link:focus {
+  left: 0.5rem;
+  top: 0.5rem;
+}
+:focus-visible {
+  outline: 2px solid #d4a96a;
+  outline-offset: 2px;
+}
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Links */
+a { color: var(--color-link); }
+
+/* Footer */
+footer {
+  color: var(--color-text-muted);
+}

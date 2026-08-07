@@ -1,0 +1,247 @@
+{{ define "main" }}
+
+{{ $typeLabels := dict
+  "journal_article" "Articles"
+  "book" "Books"
+  "book_chapter" "Book Chapters"
+  "report" "Reports"
+  "patent" "Patents"
+  "court_brief" "Court Briefs"
+  "data" "Datasets"
+  "software" "Software"
+  "presentation" "Presentations"
+}}
+
+{{ $pubs := where site.RegularPages "Section" "publication" }}
+{{ $pubs = $pubs.ByDate.Reverse }}
+
+{{ $usedTypes := slice }}
+{{ range $pubs }}
+  {{ range .Params.publication_types }}
+    {{ if not (in $usedTypes .) }}{{ $usedTypes = $usedTypes | append . }}{{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $years := slice }}
+{{ range $pubs }}
+  {{ $y := .Date.Format "2006" }}
+  {{ if not (in $years $y) }}{{ $years = $years | append $y }}{{ end }}
+{{ end }}
+{{ $years = sort $years "value" "desc" }}
+
+<div class="max-w-6xl mx-auto px-6 py-10">
+  <h1 class="text-3xl font-bold mb-6" style="color: var(--color-text)">Writings</h1>
+
+  <!-- Tab strip -->
+  <div class="sticky top-0 z-20 flex gap-1 overflow-x-auto pb-2 mb-6 border-b" style="background: var(--color-bg); border-color: var(--color-border)">
+    <button class="tab-btn px-4 py-2 text-sm font-medium rounded-t whitespace-nowrap" data-tab="all">All</button>
+    {{ range $usedTypes }}
+    <button class="tab-btn px-4 py-2 text-sm font-medium rounded-t whitespace-nowrap" data-tab="{{ . }}">{{ index $typeLabels . | default (strings.Title .) }}</button>
+    {{ end }}
+  </div>
+
+  <div class="flex flex-col md:flex-row gap-8">
+
+    <!-- Sidebar filters -->
+    <aside class="md:w-64 shrink-0">
+      <div class="sticky top-20 rounded-lg border p-4 flex flex-col gap-5" style="border-color: var(--color-border); background: var(--color-surface)">
+
+        <div>
+          <label for="pub-search" class="text-xs font-semibold uppercase tracking-wide" style="color: var(--color-text-muted)">Search</label>
+          <input id="pub-search" type="text" placeholder="Title, author, venue…" class="mt-1 w-full rounded border px-2 py-1.5 text-sm" style="border-color: var(--color-border); background: var(--color-bg); color: var(--color-text)" />
+        </div>
+
+        <div>
+          <label for="area-filter" class="text-xs font-semibold uppercase tracking-wide" style="color: var(--color-text-muted)">Research Area</label>
+          <select id="area-filter" class="mt-1 w-full rounded border px-2 py-1.5 text-sm" style="border-color: var(--color-border); background: var(--color-bg); color: var(--color-text)">
+            <option value="">All areas</option>
+            {{ range site.Data.research_areas.areas }}
+            <option value="{{ .slug }}">{{ .name }}</option>
+            {{ end }}
+          </select>
+        </div>
+
+        {{ if gt (len $years) 0 }}
+        <div>
+          <div class="text-xs font-semibold uppercase tracking-wide mb-1" style="color: var(--color-text-muted)">Year</div>
+          <div class="flex flex-col gap-1 max-h-[200px] overflow-y-auto pr-1">
+            {{ range $years }}
+            <label class="flex items-center gap-2 text-sm" style="color: var(--color-text)">
+              <input type="checkbox" class="year-filter shrink-0" value="{{ . }}" checked />
+              <span>{{ . }}</span>
+            </label>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+
+        <div>
+          <label for="sort-select" class="text-xs font-semibold uppercase tracking-wide" style="color: var(--color-text-muted)">Sort</label>
+          <select id="sort-select" class="mt-1 w-full rounded border px-2 py-1.5 text-sm" style="border-color: var(--color-border); background: var(--color-bg); color: var(--color-text)">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+            <option value="title-az">Title A&ndash;Z</option>
+            <option value="title-za">Title Z&ndash;A</option>
+          </select>
+        </div>
+
+        <button id="reset-filters" class="text-sm font-medium hover:underline text-left" style="color: var(--color-link)">Reset filters</button>
+      </div>
+    </aside>
+
+    <!-- Results -->
+    <div class="flex-1 min-w-0">
+      <div class="flex items-center justify-between mb-4 text-sm" style="color: var(--color-text-muted)">
+        <span id="result-count">{{ len $pubs }} of {{ len $pubs }} results</span>
+        <button id="bibtex-all" class="font-medium hover:underline" style="color: var(--color-link)">Download BibTeX</button>
+      </div>
+
+      <div id="pub-list" class="flex flex-col">
+        {{ range $pubs }}
+        {{ $primaryType := "" }}
+        {{ with .Params.publication_types }}{{ $primaryType = index . 0 }}{{ end }}
+        {{ $areaSlugs := slice }}
+        {{ $pubTags := .Params.tags | default slice }}
+        {{ range site.Data.research_areas.areas }}
+          {{ $areaName := .slug }}
+          {{ range .tags }}{{ if in $pubTags . }}{{ $areaSlugs = $areaSlugs | append $areaName }}{{ end }}{{ end }}
+        {{ end }}
+        {{ $authorNames := slice }}
+        {{ range .Params.authors }}{{ $authorNames = $authorNames | append . }}{{ end }}
+
+        {{ $bibKey := replaceRE "[^a-z0-9]" "" (lower (printf "%s%s" (index (split .Title " ") 0) (.Date.Format "2006"))) }}
+        {{ $bibtex := printf "@article{%s,\n  title = {%s},\n  author = {%s},\n  year = {%s},\n%s}"
+            $bibKey
+            .Title
+            (delimit $authorNames " and ")
+            (.Date.Format "2006")
+            (cond (.Params.publication) (printf "  journal = {%s},\n" (.Params.publication | plainify)) "")
+        }}
+
+        <article class="pub-item py-4 border-b" style="border-color: var(--color-border)"
+          data-tab="{{ $primaryType }}"
+          data-year="{{ .Date.Format "2006" }}"
+          data-title="{{ .Title }}"
+          data-areas="{{ delimit $areaSlugs "," }}"
+          data-search="{{ lower (printf "%s %s %s" .Title (delimit $authorNames " ") (.Params.publication | plainify)) }}"
+          data-bibtex="{{ $bibtex }}">
+          <div class="text-sm" style="color: var(--color-text-muted)">
+            {{ delimit $authorNames ", " }} &middot; {{ .Date.Format "2006" }}
+          </div>
+          <h3 class="font-semibold mt-0.5">
+            <a href="{{ .RelPermalink }}" class="hover:underline" style="color: var(--color-text)">{{ .Title }}</a>
+          </h3>
+          {{ if .Params.publication }}
+          <div class="text-sm italic mt-0.5" style="color: var(--color-text-muted)">{{ .Params.publication | markdownify }}</div>
+          {{ end }}
+          <div class="mt-1">
+            {{ partial "page_links_div.html" . }}
+          </div>
+        </article>
+        {{ end }}
+      </div>
+
+      <p id="no-results" class="hidden text-sm py-8 text-center" style="color: var(--color-text-muted)">No matching writings.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  var tabs = document.querySelectorAll('.tab-btn');
+  var items = Array.prototype.slice.call(document.querySelectorAll('.pub-item'));
+  var searchInput = document.getElementById('pub-search');
+  var areaFilter = document.getElementById('area-filter');
+  var sortSelect = document.getElementById('sort-select');
+  var resetBtn = document.getElementById('reset-filters');
+  var resultCount = document.getElementById('result-count');
+  var noResults = document.getElementById('no-results');
+  var list = document.getElementById('pub-list');
+  var bibtexAllBtn = document.getElementById('bibtex-all');
+  var activeTab = 'all';
+
+  function yearChecked(y) {
+    var box = document.querySelector('.year-filter[value="' + y + '"]');
+    return !box || box.checked;
+  }
+
+  function applyFilters() {
+    var q = (searchInput.value || '').toLowerCase().trim();
+    var area = areaFilter.value;
+    var visible = [];
+
+    items.forEach(function(item) {
+      var matchesTab = (activeTab === 'all') || (item.dataset.tab === activeTab);
+      var matchesSearch = !q || item.dataset.search.indexOf(q) !== -1;
+      var matchesArea = !area || (item.dataset.areas || '').split(',').indexOf(area) !== -1;
+      var matchesYear = yearChecked(item.dataset.year);
+      var show = matchesTab && matchesSearch && matchesArea && matchesYear;
+      item.style.display = show ? '' : 'none';
+      if (show) visible.push(item);
+    });
+
+    // Sort
+    var sortVal = sortSelect.value;
+    visible.sort(function(a, b) {
+      if (sortVal === 'newest') return b.dataset.year.localeCompare(a.dataset.year);
+      if (sortVal === 'oldest') return a.dataset.year.localeCompare(b.dataset.year);
+      if (sortVal === 'title-az') return a.dataset.title.localeCompare(b.dataset.title);
+      if (sortVal === 'title-za') return b.dataset.title.localeCompare(a.dataset.title);
+      return 0;
+    });
+    visible.forEach(function(el) { list.appendChild(el); });
+
+    resultCount.textContent = visible.length + ' of ' + items.length + ' results';
+    noResults.classList.toggle('hidden', visible.length !== 0);
+
+    tabs.forEach(function(btn) {
+      btn.classList.toggle('tab-active', btn.dataset.tab === activeTab);
+    });
+  }
+
+  function setTab(tabId) {
+    activeTab = tabId || 'all';
+    location.hash = activeTab === 'all' ? '' : activeTab;
+    applyFilters();
+  }
+
+  tabs.forEach(function(btn) {
+    btn.addEventListener('click', function() { setTab(btn.dataset.tab); });
+  });
+
+  [searchInput, areaFilter, sortSelect].forEach(function(el) {
+    el.addEventListener('input', applyFilters);
+    el.addEventListener('change', applyFilters);
+  });
+  document.querySelectorAll('.year-filter').forEach(function(box) {
+    box.addEventListener('change', applyFilters);
+  });
+
+  resetBtn.addEventListener('click', function() {
+    searchInput.value = '';
+    areaFilter.value = '';
+    sortSelect.value = 'newest';
+    document.querySelectorAll('.year-filter').forEach(function(box) { box.checked = true; });
+    setTab('all');
+  });
+
+  function downloadBibtex(entries, filename) {
+    var blob = new Blob([entries.join('\n\n')], { type: 'text/plain' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = filename;
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }
+
+  bibtexAllBtn.addEventListener('click', function() {
+    var visible = items.filter(function(i) { return i.style.display !== 'none'; });
+    downloadBibtex(visible.map(function(i) { return i.dataset.bibtex; }), 'publications.bib');
+  });
+
+  var initialHash = location.hash.replace('#', '') || 'all';
+  setTab(initialHash);
+})();
+</script>
+
+{{ end }}

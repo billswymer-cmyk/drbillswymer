@@ -1,0 +1,66 @@
+baseURL: "https://billswymer-cmyk.github.io/drbillswymer/"
+title: "Dr. Bill Swymer"
+
+enableRobotsTXT: true
+enableEmoji: false
+
+module:
+  imports:
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
+
+outputs:
+  home: [HTML, RSS, JSON]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  tag: tags
+  category: categories
+  publication_type: publication_types
+  author: authors
+
+params:
+  appearance:
+    mode: light
+    color: custom
+    font: native
+  header:
+    navbar:
+      enable: true
+      align: right
+      logo:
+        text: "BILL SWYMER"
+      show_search: true
+  features:
+    search:
+      provider: flexsearch
+  extensions:
+    css:
+      - css/custom.css
+  mysite:
+    credit: true
+    discovery: true
+
+menu:
+  main:
+    - name: Research Areas
+      url: /#research-areas
+      weight: 5
+    - name: Bio & C.V.
+      url: /bio/
+      weight: 10
+    - name: Writings
+      url: /publication/
+      weight: 20
+    - name: Teaching
+      url: /teaching/
+      weight: 30
+    - name: People
+      url: /people/
+      weight: 40
+    - name: Contact
+      url: /contact/
+      weight: 50

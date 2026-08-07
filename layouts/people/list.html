@@ -1,0 +1,39 @@
+{{ define "main" }}
+
+<div class="max-w-3xl mx-auto px-6 py-10">
+  <h1 class="text-3xl font-bold mb-4" style="color: var(--color-text)">People</h1>
+
+  {{ $pubs := where site.RegularPages "Section" "publication" }}
+  {{ $coauthors := slice }}
+  {{ range $pubs }}
+    {{ range .Params.authors }}
+      {{ if and (ne . "Bill Swymer") (not (in $coauthors .)) }}
+        {{ $coauthors = $coauthors | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $coauthors = sort $coauthors }}
+
+  {{ if gt (len $coauthors) 0 }}
+  <p class="mb-6 leading-relaxed" style="color: var(--color-text)">
+    Bill's published research is co-authored; below are his collaborators, linked to their institutional pages where available.
+  </p>
+  <ul class="flex flex-col gap-2">
+    {{ $links := site.Data.coauthors }}
+    {{ range $coauthors }}
+    <li>
+      {{ $url := index $links . }}
+      {{ if $url }}
+      <a href="{{ $url }}" target="_blank" rel="noopener" class="hover:underline" style="color: var(--color-link)">{{ . }}</a>
+      {{ else }}
+      <span style="color: var(--color-text)">{{ . }}</span>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+  {{ else }}
+  <p style="color: var(--color-text-muted)">No co-authors listed yet.</p>
+  {{ end }}
+</div>
+
+{{ end }}

@@ -1,0 +1,22 @@
+{
+  "areas": [
+    {
+      "slug": "brokerage-agent-behavior",
+      "name": "Real Estate Brokerage & Agent Behavior",
+      "description": "How listing agents, relisting decisions, and agent switching shape sale prices and time on market.",
+      "tags": ["listing agents", "relisting"]
+    },
+    {
+      "slug": "housing-market-dynamics",
+      "name": "Housing Market Dynamics",
+      "description": "Price and marketing-time outcomes across phases of the housing cycle.",
+      "tags": ["housing market", "housing economics"]
+    },
+    {
+      "slug": "real-estate-finance",
+      "name": "Real Estate Finance",
+      "description": "Finance topics in real estate, drawing on an M.S. in Finance and current teaching in real estate and finance.",
+      "tags": ["real estate finance"]
+    }
+  ]
+}

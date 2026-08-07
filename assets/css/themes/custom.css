@@ -1,0 +1,27 @@
+/* Hugo Blox color theme: CUSTOM (warm earth tones for Dr. Bill Swymer) */
+:root {
+  /* Umber palette (primary / accent) */
+  --hb-primary-50-rgb: 250 246 241;
+  --hb-primary-100-rgb: 243 235 224;
+  --hb-primary-200-rgb: 230 211 189;
+  --hb-primary-300-rgb: 212 180 143;
+  --hb-primary-400-rgb: 184 144 95;
+  --hb-primary-500-rgb: 156 117 72;
+  --hb-primary-600-rgb: 122 92 58;
+  --hb-primary-700-rgb: 97 74 48;
+  --hb-primary-800-rgb: 77 59 39;
+  --hb-primary-900-rgb: 63 49 32;
+  --hb-primary-950-rgb: 36 28 18;
+  /* Sage palette (secondary / links) */
+  --hb-secondary-50-rgb: 243 247 245;
+  --hb-secondary-100-rgb: 227 237 232;
+  --hb-secondary-200-rgb: 197 219 208;
+  --hb-secondary-300-rgb: 159 194 176;
+  --hb-secondary-400-rgb: 122 163 142;
+  --hb-secondary-500-rgb: 90 122 107;
+  --hb-secondary-600-rgb: 74 101 88;
+  --hb-secondary-700-rgb: 61 82 72;
+  --hb-secondary-800-rgb: 50 66 59;
+  --hb-secondary-900-rgb: 42 55 48;
+  --hb-secondary-950-rgb: 22 30 25;
+}
