@@ -2,8 +2,14 @@
 title: "Education"
 ---
 
-**Ph.D., Real Estate** — University of Georgia, Terry College of Business, 2024
+**Ph.D., Business Administration – Real Estate (Minor – Finance)** — University of Georgia, 2024
 
-**M.S., Finance** — Bentley University, 2012
+**Master of Real Estate Development** — Auburn University, 2019
 
-**B.S., Business Administration** — Endicott College, 2005
+**Master of Science in Finance** — Bentley University, 2012
+
+**Master of Science in Real Estate Management** — Bentley University, 2008
+
+**Master of Business Administration** — Endicott College, 2007
+
+**Bachelor of Science in Business** — Endicott College, 2005
