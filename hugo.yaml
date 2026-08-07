@@ -52,6 +52,9 @@ menu:
     - name: Bio & C.V.
       url: /bio/
       weight: 10
+    - name: Education
+      url: /education/
+      weight: 15
     - name: Writings
       url: /publication/
       weight: 20
