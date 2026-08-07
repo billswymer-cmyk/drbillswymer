@@ -1,12 +1,14 @@
 :root {
-  /* University of Alabama brand colors: brand.ua.edu/colors */
-  --color-bg: #ffffff;         /* Victory White */
+  /* University of Georgia brand colors: white body, red header */
+  --color-bg: #ffffff;         /* White */
   --color-surface: #f5f5f6;    /* light neutral tint for card/panel backgrounds */
-  --color-text: #1a1a1a;
-  --color-text-muted: #828a8f; /* Capstone Gray */
-  --color-accent: #9e1b32;     /* Crimson Flame */
-  --color-link: #9e1b32;       /* Crimson Flame */
-  --color-border: #c1c6c9;     /* Chimes Gray */
+  --color-text: #000000;       /* Black */
+  --color-text-muted: #5f5f5f;
+  --color-accent: #ba0c2f;     /* UGA Red */
+  --color-link: #ba0c2f;       /* UGA Red */
+  --color-border: #d1d1d1;
+  --color-header-bg: #ba0c2f;    /* UGA Red header bar */
+  --color-header-text: #ffffff;  /* White nav text/links against the red header */
   --navbar-height: 4rem;
 }
 
@@ -34,15 +36,19 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.02em;
-  color: var(--color-text) !important;
+  color: var(--color-header-text) !important;
 }
 #site-header {
-  background: var(--color-bg);
+  background: var(--color-header-bg) !important;
   border-bottom: 1px solid var(--color-border);
 }
 .navbar { padding-left: 1.5rem; padding-right: 1.5rem; padding-top: 1rem; padding-bottom: 1rem; }
-.nav-link { color: var(--color-text) !important; }
-.nav-link:hover, .nav-link.active { color: var(--color-accent) !important; }
+.nav-link { color: var(--color-header-text) !important; }
+.nav-link:hover, .nav-link.active {
+  color: var(--color-header-text) !important;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 
 /* Tabs (Writings page) */
 .tab-btn {
@@ -78,8 +84,8 @@ details:hover {
   position: absolute;
   left: -9999px;
   top: 0;
-  background: var(--color-accent);
-  color: #fff;
+  background: var(--color-header-bg);
+  color: var(--color-header-text);
   padding: 0.5rem 1rem;
   z-index: 100;
 }
@@ -88,7 +94,7 @@ details:hover {
   top: 0.5rem;
 }
 :focus-visible {
-  outline: 2px solid #d0103a; /* Roll Tide Red, for a focus ring distinct from accent */
+  outline: 2px solid #000000;
   outline-offset: 2px;
 }
 .sr-only {

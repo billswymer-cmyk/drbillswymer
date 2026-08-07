@@ -1,27 +1,27 @@
-/* Hugo Blox color theme: CUSTOM (University of Alabama crimson & white) */
+/* Hugo Blox color theme: CUSTOM (University of Georgia red & black) */
 :root {
-  /* Crimson palette (primary / accent) — anchored at 600 = UA Crimson Flame #9e1b32 */
-  --hb-primary-50-rgb: 253 235 237;
-  --hb-primary-100-rgb: 250 214 218;
-  --hb-primary-200-rgb: 244 174 183;
-  --hb-primary-300-rgb: 234 122 137;
-  --hb-primary-400-rgb: 216 74 97;
-  --hb-primary-500-rgb: 190 45 68;
-  --hb-primary-600-rgb: 158 27 50;
-  --hb-primary-700-rgb: 130 20 39;
-  --hb-primary-800-rgb: 100 15 30;
-  --hb-primary-900-rgb: 72 11 22;
-  --hb-primary-950-rgb: 40 6 12;
-  /* Neutral gray palette (secondary) — anchored at 500 = UA Capstone Gray #828a8f */
-  --hb-secondary-50-rgb: 247 247 248;
-  --hb-secondary-100-rgb: 240 241 242;
-  --hb-secondary-200-rgb: 225 227 229;
-  --hb-secondary-300-rgb: 199 202 205;
-  --hb-secondary-400-rgb: 166 171 176;
-  --hb-secondary-500-rgb: 130 138 143;
-  --hb-secondary-600-rgb: 104 111 116;
-  --hb-secondary-700-rgb: 79 85 89;
-  --hb-secondary-800-rgb: 55 60 64;
-  --hb-secondary-900-rgb: 36 40 43;
-  --hb-secondary-950-rgb: 20 22 24;
+  /* Red palette (primary / accent) — anchored at 600 = UGA Red #ba0c2f */
+  --hb-primary-50-rgb: 253 234 237;
+  --hb-primary-100-rgb: 250 210 217;
+  --hb-primary-200-rgb: 244 165 178;
+  --hb-primary-300-rgb: 233 108 130;
+  --hb-primary-400-rgb: 217 58 87;
+  --hb-primary-500-rgb: 199 27 55;
+  --hb-primary-600-rgb: 186 12 47;
+  --hb-primary-700-rgb: 153 10 39;
+  --hb-primary-800-rgb: 117 8 30;
+  --hb-primary-900-rgb: 84 6 22;
+  --hb-primary-950-rgb: 46 3 12;
+  /* Black / neutral palette (secondary) */
+  --hb-secondary-50-rgb: 245 245 245;
+  --hb-secondary-100-rgb: 229 229 229;
+  --hb-secondary-200-rgb: 199 199 199;
+  --hb-secondary-300-rgb: 163 163 163;
+  --hb-secondary-400-rgb: 115 115 115;
+  --hb-secondary-500-rgb: 82 82 82;
+  --hb-secondary-600-rgb: 58 58 58;
+  --hb-secondary-700-rgb: 38 38 38;
+  --hb-secondary-800-rgb: 23 23 23;
+  --hb-secondary-900-rgb: 12 12 12;
+  --hb-secondary-950-rgb: 3 3 3;
 }
