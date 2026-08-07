@@ -1,27 +1,27 @@
-/* Hugo Blox color theme: CUSTOM (warm earth tones for Dr. Bill Swymer) */
+/* Hugo Blox color theme: CUSTOM (University of Alabama crimson & white) */
 :root {
-  /* Umber palette (primary / accent) */
-  --hb-primary-50-rgb: 250 246 241;
-  --hb-primary-100-rgb: 243 235 224;
-  --hb-primary-200-rgb: 230 211 189;
-  --hb-primary-300-rgb: 212 180 143;
-  --hb-primary-400-rgb: 184 144 95;
-  --hb-primary-500-rgb: 156 117 72;
-  --hb-primary-600-rgb: 122 92 58;
-  --hb-primary-700-rgb: 97 74 48;
-  --hb-primary-800-rgb: 77 59 39;
-  --hb-primary-900-rgb: 63 49 32;
-  --hb-primary-950-rgb: 36 28 18;
-  /* Sage palette (secondary / links) */
-  --hb-secondary-50-rgb: 243 247 245;
-  --hb-secondary-100-rgb: 227 237 232;
-  --hb-secondary-200-rgb: 197 219 208;
-  --hb-secondary-300-rgb: 159 194 176;
-  --hb-secondary-400-rgb: 122 163 142;
-  --hb-secondary-500-rgb: 90 122 107;
-  --hb-secondary-600-rgb: 74 101 88;
-  --hb-secondary-700-rgb: 61 82 72;
-  --hb-secondary-800-rgb: 50 66 59;
-  --hb-secondary-900-rgb: 42 55 48;
-  --hb-secondary-950-rgb: 22 30 25;
+  /* Crimson palette (primary / accent) — anchored at 600 = UA Crimson Flame #9e1b32 */
+  --hb-primary-50-rgb: 253 235 237;
+  --hb-primary-100-rgb: 250 214 218;
+  --hb-primary-200-rgb: 244 174 183;
+  --hb-primary-300-rgb: 234 122 137;
+  --hb-primary-400-rgb: 216 74 97;
+  --hb-primary-500-rgb: 190 45 68;
+  --hb-primary-600-rgb: 158 27 50;
+  --hb-primary-700-rgb: 130 20 39;
+  --hb-primary-800-rgb: 100 15 30;
+  --hb-primary-900-rgb: 72 11 22;
+  --hb-primary-950-rgb: 40 6 12;
+  /* Neutral gray palette (secondary) — anchored at 500 = UA Capstone Gray #828a8f */
+  --hb-secondary-50-rgb: 247 247 248;
+  --hb-secondary-100-rgb: 240 241 242;
+  --hb-secondary-200-rgb: 225 227 229;
+  --hb-secondary-300-rgb: 199 202 205;
+  --hb-secondary-400-rgb: 166 171 176;
+  --hb-secondary-500-rgb: 130 138 143;
+  --hb-secondary-600-rgb: 104 111 116;
+  --hb-secondary-700-rgb: 79 85 89;
+  --hb-secondary-800-rgb: 55 60 64;
+  --hb-secondary-900-rgb: 36 40 43;
+  --hb-secondary-950-rgb: 20 22 24;
 }
