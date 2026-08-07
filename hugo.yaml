@@ -58,7 +58,7 @@ menu:
     - name: Research
       url: /research/
       weight: 30
-    - name: People
+    - name: Co-authors
       url: /people/
       weight: 49
     - name: Contact
