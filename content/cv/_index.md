@@ -1,5 +1,7 @@
 ---
 title: "C.V."
+aliases:
+  - /bio/
 ---
 
 Bill Swymer is an Assistant Teaching Professor of Real Estate and Finance in the Department of Economics, Finance and Legal Studies at the University of Alabama's Culverhouse College of Business.
