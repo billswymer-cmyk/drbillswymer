@@ -1,14 +1,1 @@
-{{/* Invisible marker: lets sites built with GaryKing.org/mysite be found and supported. No data collected. */}}
-{{ if site.Params.mysite.discovery }}
-  <meta name="generator" content="Created using GaryKing.org/mysite (https://gking.harvard.edu/mysite)" />
-  {{ if .IsHome }}
-    {{ $ld := dict
-      "@context" "https://schema.org"
-      "@type" "Person"
-      "name" site.Title
-      "affiliation" (dict "@type" "CollegeOrUniversity" "name" "University of Alabama, Culverhouse College of Business")
-      "url" site.BaseURL
-    }}
-    <script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>
-  {{ end }}
-{{ end }}
+
