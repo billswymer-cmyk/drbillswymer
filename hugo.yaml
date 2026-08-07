@@ -52,9 +52,9 @@ menu:
     - name: Education
       url: /education/
       weight: 10
-    - name: Writings
+    - name: Publications
       url: /publication/
-      weight: 20
+      weight: 48
     - name: Teaching
       url: /teaching/
       weight: 30
