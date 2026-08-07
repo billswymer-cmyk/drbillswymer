@@ -49,8 +49,8 @@ menu:
     - name: Research
       url: /#research
       weight: 15
-    - name: Bio & C.V.
-      url: /bio/
+    - name: C.V.
+      url: /cv/
       weight: 45
     - name: Education
       url: /education/
