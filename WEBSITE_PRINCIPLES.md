@@ -36,7 +36,7 @@ For future maintainers (human or AI) working on this repository.
 Hugo's built-in `authors` **taxonomy** (`taxonomies.author: authors` in
 `hugo.yaml`, used so publication pages can resolve author names to pages)
 auto-generates a term-list page at `/authors/`. A content section at the same
-path would collide and fail the build. The human-facing "Co-authors" page
+path would collide and fail the build. The human-facing "Co-Authors" page
 lives at `/people/` instead; the `authors` taxonomy is used only internally by
 `publication/single.html` to resolve author names.
 

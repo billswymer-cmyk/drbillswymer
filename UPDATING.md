@@ -62,7 +62,7 @@ a link to `data/coauthors.json`:
 }
 ```
 
-The Co-authors page (`/people/`) is auto-populated from every publication's
+The Co-Authors page (`/people/`) is auto-populated from every publication's
 `authors:` field — **co-author links were resolved by web search and should
 be double-checked**; fix or remove any that point to the wrong person.
 
