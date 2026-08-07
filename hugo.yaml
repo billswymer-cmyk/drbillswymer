@@ -60,7 +60,7 @@ menu:
       weight: 30
     - name: People
       url: /people/
-      weight: 40
+      weight: 49
     - name: Contact
       url: /contact/
       weight: 50
