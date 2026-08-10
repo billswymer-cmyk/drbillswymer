@@ -19,22 +19,23 @@ Bill Swymer is an Assistant Teaching Professor of Real Estate and Finance in the
 1. Freeman, N., **Swymer B.**, & Yavuz, M. (2026) "What You List Is What You See: Thematic Coverage Bias Across Business School Journal Rankings" *Under Review at Research Policy*
 2. **Swymer, B.** "Residential Real Estate Listings with Offer Deadlines"
 3. Freeman, N., & **Swymer B.** "Detecting Offer Deadlines in Real Estate Listings Using Fine-Tuned DistilBERT"
+4. *Swymer,B.** “Regulatory Moats: How Restricting Institutional Entry Raised Incumbent Landlords’ Value: Evidence from the 2026 Single-Family Rental Restrictions”
 
 ## Works in Progress
 
 1. The Cost of Affordability: Simulating Lifetime Earnings Losses from Housing Cost-Burden Preservation
 2. The Hidden Cost of Income Limits: A Welfare Comparison of Housing Subsidy Designs
-3. Degree of Overpricing, Buyer Arrivals, and Time-on-Market: A Simultaneous-Equations Approach
-4. Estimating Unobservable Buyer Demand: An Inventory-Based Approach
-5. Rethinking the Price-DOM Relationship: Is It Linear After All?
-6. Announcement, Removal, and Market Response: An Event Study of the NAR Commission Settlement
-7. Homogeneous Versus Heterogeneous Goods: Testing Agent Performance in Condo and Single-Family Transactions
-8. Firing the Agent: Does Switching After Poor Performance Actually Help?
-9. How Agent Markets Form and Evolve: Spatial Concentration, Competitor Entry, and Inventory Shocks in Residential Brokerage
-10. Repricing to Sell: The Effects of List Price Changes on Price, Time-on-Market, and Sale Likelihood
-11. Jack of All Trades or Master of One? Agent Specialization and Client Performance in Residential Brokerage
-12. Seller Timing Decisions Reconsidered: The Listing Date, Not the Sale Date, Drives Outcomes
-13. Diminishing Returns at the Top: School Quality, Price Appreciation, and the Limits of Capitalization
+3. Diminishing Returns at the Top: School Quality, Price Appreciation, and the Limits of Capitalization (with Waller,B.)
+4. Degree of Overpricing, Buyer Arrivals, and Time-on-Market: A Simultaneous-Equations Approach
+5. Estimating Unobservable Buyer Demand: An Inventory-Based Approach
+6. Rethinking the Price-DOM Relationship: Is It Linear After All?
+7. Announcement, Removal, and Market Response: An Event Study of the NAR Commission Settlement
+8. Homogeneous Versus Heterogeneous Goods: Testing Agent Performance in Condo and Single-Family Transactions
+9. Firing the Agent: Does Switching After Poor Performance Actually Help?
+10. How Agent Markets Form and Evolve: Spatial Concentration, Competitor Entry, and Inventory Shocks in Residential Brokerage
+11. Repricing to Sell: The Effects of List Price Changes on Price, Time-on-Market, and Sale Likelihood
+12. Jack of All Trades or Master of One? Agent Specialization and Client Performance in Residential Brokerage
+13. Seller Timing Decisions Reconsidered: The Listing Date, Not the Sale Date, Drives Outcomes
 14. Local Expertise or Undiversified Risk? Geographic Concentration and REIT Returns
 15. An Unintended Instrument of Exclusion: How Septic-Driven Lot Minimums Caused Residential Segregation
 16. The Relationship Between Rental Housing Share and Neighborhood Characteristics
