@@ -9,7 +9,7 @@ aliases:
   Download Titles &amp; Abstracts (PDF)
 </a>
 
-Bill is open to collaboration on any of the projects listed below, or sharing data to collaborate on other research projects.
+<p style="font-size: 1.5em;">Bill is open to collaboration on any of the projects listed below, or sharing data to collaborate on other research projects.
 
 ## Working Papers
 
