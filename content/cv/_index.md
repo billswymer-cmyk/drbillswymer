@@ -4,7 +4,8 @@ aliases:
   - /bio/
 ---
 
-<a href="/files/swymer-cv.pdf" download class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border font-medium hover:underline mb-4" style="border-color: var(--color-border); color: var(--color-link); background: var(--color-surface)">
+<a href="{{< staticrel "files/swymer-cv.pdf" >}}" download class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border font-medium hover:underline mb-4" style="border-color: var(--color-border);
+  color: var(--color-link); background: var(--color-surface)">
   Download C.V. (PDF)
 </a>
 
