@@ -4,8 +4,8 @@ aliases:
   - /teaching/
 ---
 
-<a href="/files/works-in-progress.pdf" download class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border font-medium hover:underline mb-4" style="border-color: var(--color-border); color:
-  var(--color-link); background: var(--color-surface)">
+  <a href="{{< staticrel "files/works-in-progress.pdf" >}}" download class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border font-medium hover:underline mb-4" style="border-color:
+  var(--color-border); color: var(--color-link); background: var(--color-surface)">
   Download Titles &amp; Abstracts (PDF)
 </a>
 
