@@ -3,13 +3,12 @@ title: "Research"
 aliases:
   - /teaching/
 ---
-
+<p style="font-size: 1.5em;">Bill is open to collaboration on any of the projects listed below, or sharing data to collaborate on other research projects.
+  
   <a href="{{< staticrel "files/works-in-progress.pdf" >}}" download class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border font-medium hover:underline mb-4" style="border-color:
   var(--color-border); color: var(--color-link); background: var(--color-surface)">
   Download Titles &amp; Abstracts (PDF)
 </a>
-
-<p style="font-size: 1.5em;">Bill is open to collaboration on any of the projects listed below, or sharing data to collaborate on other research projects.
 
 ## Working Papers
 
