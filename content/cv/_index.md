@@ -9,7 +9,7 @@ aliases:
   Download C.V. (PDF)
 </a>
 
-Bill Swymer is an Assistant Teaching Professor of Real Estate in the Department of Economics, Finance and Legal Studies at the University of Alabama's Culverhouse College of Business.
+Bill Swymer is an Teaching Assistant Professor of Real Estate in the Department of Economics, Finance and Legal Studies at the University of Alabama's Culverhouse College of Business.
 
 ## Publications
 
@@ -60,7 +60,7 @@ Bill Swymer is an Assistant Teaching Professor of Real Estate in the Department 
 
 ## Academic Experience
 
-**Assistant Teaching Professor of Real Estate** | 2025 – Present
+**Teaching Assistant Professor of Real Estate** | 2025 – Present
 *Culverhouse College of Business, University of Alabama, Tuscaloosa, AL*
 - Principles of Real Estate
 - Real Estate Appraisal
