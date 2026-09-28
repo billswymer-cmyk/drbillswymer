@@ -12,15 +12,15 @@ aliases:
 
 ## Working Papers
 
-1. Freeman, N., **Swymer B.**, & Yavuz, M. (2026) "What You List Is What You See: Thematic Coverage Bias Across Business School Journal Rankings" *Under Review at Research Policy*
+1. Freeman, N., **Swymer, B.**, & Yavuz, M. (2026) "What You List Is What You See: Thematic Coverage Bias Across Business School Journal Rankings" *Under Review at Research Policy*
 2. **Swymer, B.** "Residential Real Estate Listings with Offer Deadlines"
-3. Freeman, N., & **Swymer B.** "Detecting Offer Deadlines in MLS Listing Text: A Design-Based Audit of Rules, a Hybrid Classifier, and a Local LLM"
+3. Freeman, N., & **Swymer, B.** "Detecting Offer Deadlines in MLS Listing Text: A Design-Based Audit of Rules, a Hybrid Classifier, and a Local LLM"
 4. **Swymer, B.** “Regulatory Moats: How Restricting Institutional Entry Raised Incumbent Landlords’ Value: Evidence from the 2026 Single-Family Rental Restrictions”
  
 
 ## Works in Progress
 
-### Disclosing Agent Ownership Interest: Variation in Transparency Across MLS Platforms (with Ross,A and Waller,B)
+### Disclosing Agent Ownership Interest: Variation in Transparency Across MLS Platforms (with Ross, A and Waller, B)
 
 Disclosure of agent ownership interest is nearly universal in licensing and ethics rules, but implementation clarity may vary considerably across MLS platforms. The idea is to audit how agent-interest disclosures are structured, labeled, and made searchable across multiple MLS systems, treating disclosure quality as a measurable institutional variable rather than a binary legal requirement. Cross-platform comparison would document any gaps between the rule on paper and transparency in practice. The goal is to establish a compliance-and-transparency baseline for subsequent work on whether disclosure clarity affects transaction outcomes.
 
