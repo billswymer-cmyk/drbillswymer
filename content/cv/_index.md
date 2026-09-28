@@ -24,26 +24,25 @@ Bill Swymer is an Assistant Teaching Professor of Real Estate in the Department 
 
 ## Works in Progress
 
-1. Diminishing Returns at the Top: School Quality, Price Appreciation, and the Limits of Capitalization (with Waller,B.)
-2. Disclosing Agent Ownership Interest: Variation in Transparency Across MLS Platforms (with Ross,A and Waller, B.)
+1. Disclosing Agent Ownership Interest: Variation in Transparency Across MLS Platforms (with Ross,A and Waller,B)
+2. Diminishing Returns at the Top: School Quality, Price Appreciation, and the Limits of Capitalization (with Waller, B.)
 3. The Cost of Affordability: Simulating Lifetime Earnings Losses from Housing Cost-Burden Preservation
 4. The Hidden Cost of Income Limits: A Welfare Comparison of Housing Subsidy Designs
-5. Diminishing Returns at the Top: School Quality, Price Appreciation, and the Limits of Capitalization (with Waller,B.)
-6. Degree of Overpricing, Buyer Arrivals, and Time-on-Market: A Simultaneous-Equations Approach
-7. Estimating Unobservable Buyer Demand: An Inventory-Based Approach
-8. Rethinking the Price-DOM Relationship: Is It Linear After All?
-9. Announcement, Removal, and Market Response: An Event Study of the NAR Commission Settlement
-10. Homogeneous Versus Heterogeneous Goods: Testing Agent Performance in Condo and Single-Family Transactions
-11. Firing the Agent: Does Switching After Poor Performance Actually Help?
-12. How Agent Markets Form and Evolve: Spatial Concentration, Competitor Entry, and Inventory Shocks in Residential Brokerage
-13. Repricing to Sell: The Effects of List Price Changes on Price, Time-on-Market, and Sale Likelihood
-14. Jack of All Trades or Master of One? Agent Specialization and Client Performance in Residential Brokerage
-15. Seller Timing Decisions Reconsidered: The Listing Date, Not the Sale Date, Drives Outcomes
-16. Local Expertise or Undiversified Risk? Geographic Concentration and REIT Returns
-17. An Unintended Instrument of Exclusion: How Septic-Driven Lot Minimums Caused Residential Segregation
-18. The Relationship Between Rental Housing Share and Neighborhood Characteristics
-19. Are Neighborhoods Always Local? Redefining Housing Market Competition Beyond Distance
-21. Natural Disasters as Catalysts for Redevelopment
+5. Degree of Overpricing, Buyer Arrivals, and Time-on-Market: A Simultaneous-Equations Approach
+6. Estimating Unobservable Buyer Demand: An Inventory-Based Approach
+7. Rethinking the Price-DOM Relationship: Is It Linear After All?
+8. Announcement, Removal, and Market Response: An Event Study of the NAR Commission Settlement
+9. Homogeneous Versus Heterogeneous Goods: Testing Agent Performance in Condo and Single-Family Transactions
+10. Firing the Agent: Does Switching After Poor Performance Actually Help?
+11. How Agent Markets Form and Evolve: Spatial Concentration, Competitor Entry, and Inventory Shocks in Residential Brokerage
+12. Repricing to Sell: The Effects of List Price Changes on Price, Time-on-Market, and Sale Likelihood
+13. Jack of All Trades or Master of One? Agent Specialization and Client Performance in Residential Brokerage
+14. Seller Timing Decisions Reconsidered: The Listing Date, Not the Sale Date, Drives Outcomes
+15. Local Expertise or Undiversified Risk? Geographic Concentration and REIT Returns
+16. An Unintended Instrument of Exclusion: How Septic-Driven Lot Minimums Caused Residential Segregation
+17. The Relationship Between Rental Housing Share and Neighborhood Characteristics
+18. Are Neighborhoods Always Local? Redefining Housing Market Competition Beyond Distance
+19. Natural Disasters as Catalysts for Redevelopment
 
 ## Conference Presentations
 
