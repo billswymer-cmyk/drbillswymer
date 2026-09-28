@@ -17,7 +17,7 @@ Bill Swymer is an Teaching Assistant Professor of Real Estate in the Department 
 
 ## Working Papers
 
-1. Freeman, N., **Swymer B.**, & Yavuz, M. (2026) "What You List Is What You See: Thematic Coverage Bias Across Business School Journal Rankings" *Under Review at Research Policy*
+1. Freeman, N., **Swymer, B.**, & Yavuz, M. (2026) "What You List Is What You See: Thematic Coverage Bias Across Business School Journal Rankings" *Under Review at Research Policy*
 2. **Swymer, B.** "Residential Real Estate Listings with Offer Deadlines"
 3. Freeman, N., & **Swymer, B.** "Detecting Offer Deadlines in MLS Listing Text: A Design-Based Audit of Rules, a Hybrid Classifier, and a Local LLM"
 4. **Swymer, B.** “Regulatory Moats: How Restricting Institutional Entry Raised Incumbent Landlords’ Value: Evidence from the 2026 Single-Family Rental Restrictions”
